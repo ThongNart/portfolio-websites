@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        
+        <title> Thong Tran</title>
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!--  CSS Responsive Stylesheet   -->
+        
+        <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+
+        
+        <!-- Smooth SCROLLING JQUERY -->
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        
+        
+        <!-- GOOGLE ICON  -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+        
+        <style>
+            
+            
+            body, html {
+              height: 100%;
+              margin: 0;
+              font: 400 15px/1.8 "Lato", sans-serif;
+              color: #777;
+            }
+
+            .backgr1, .backgr2, .backgr3 {
+              position: relative;
+              opacity: 0.4;
+              background-attachment: fixed;
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: cover;
+
+            }
+            
+            .backgr1 {
+              background-image: url("background3.jpg");
+              min-height: 0100%;
+            }
+
+            .backgr2 {
+              background-image: url("background5.png");
+              min-height: 400px;
+            }
+
+            .backgr3 {
+              background-image: url("background1.jpg");
+              min-height: 400px;
+            }
+
+            .caption {
+              position: absolute;
+              left: 0;
+              top: 50%;
+              width: 100%;
+              text-align: center;
+              color: #000;
+            }
+            
+            
+            
+            .caption2 {
+              position: absolute;
+              left: 25%;
+              top: 30%;
+              width: 50%;
+              text-align: center;
+              color: #000;
+                background-color: #111;
+              color: #fff;
+              padding: 18px;
+              font-size: 25px;
+              letter-spacing: 10px;
+            }
+            
+            .caption span.border {
+              background-color: #fff;
+              color: #111;
+              padding: 18px;
+              font-size: 25px;
+              letter-spacing: 10px;
+            }
+
+            h3 {
+              letter-spacing: 5px;
+              text-transform: uppercase;
+              font: 20px "Lato", sans-serif;
+              color: #111;
+            }
+
+            #navbar {width: 100%;
+            height: 0px;
+            position: fixed;
+            margin-top: 0px;
+            z-index: 2;}
+
+            #nav { width: 410px; float:right        ; margin-top: 20px; background-color:black; z-index:10;position: relative;}
+
+            #logo a { color: #fff; text-decoration: none; float: left; font-size: 30px; margin-top: 20px; color: #fff; font-family:"Wellfleet"; font-weight: bold; background-color:black; }
+
+            #nav ul{
+            list-style: none;
+            display: block;
+            margin: 0 auto;
+            list-style: none;
+            }
+
+
+            #nav li{
+            margin-top: 9px;
+            float: left;
+            padding-left: 21px;
+            }
+
+
+            #nav li a { color: #fff; opacity:0.6; font-size: 16px; text-decoration: none; font-family: 'Wellfleet'; }
+
+            #nav li a.active { color: #fff; opacity:1; border-bottom: 2px solid #fff; }
+
+
+            #nav li a:hover { color: powderblue; opacity:1; }
+
+        </style>
+        
+    </head>
+        
+    <!---- ------------------------------------------- ---->
+        
+    <body>
+        
+        <div id="navbar">
+
+            <div id="logo"><a href=""> THONG TRAN </a></div>
+            
+            <nav id="nav">
+             <ul>
+             <li><a href="#about" class="active" title="Next Section" >About</a></li>
+             <li><a href="#slide2" title="Next Section">Slide 2</a></li>
+             <li><a href="#slide3" title="Next Section">Slide 3</a></li>
+             <li><a href="#slide4" title="Next Section">Slide 4</a></li>
+             <li><a href="#slide5" title="Next Section">Slide 5</a></li>
+             </ul>
+            </nav>
+            
+        </div>
+        
+      <!--  <div class="caption">
+            <span class="border">Hi, I am Thong</span> 
+            <br>
+            <span class="border"> I do digital marketing</span>
+          </div>
+        -->
+        
+         <!---BACKGROUND PARALLAX 1 -->
+        
+        <div class="caption2">
+            Hi, I am Thong <br> I am a digital marketer
+            
+        </div>
+        
+        <div class="backgr1">
+          
+        </div>
+
+        <div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;" id="about">
+          
+              <div class="w3-center w3-padding-16"><h1>About me</h1></div>
+            
+            <div class="w3-row w3-container w3-padding-8">
+                
+                <div class="w3-col l5">
+                    <p>Hi, I am an online marketer. I also do front-end web developing as I am very interested in coding and web technology. In addition to the skills on the web, I have done a great numbers of event planning and event marketing in my four years of college. But in my downtime I am on the Internet constantly learning and creating.</p>
+                </div>
+                
+                <div class="w3-col l4 w3-display-container" style="height:190px;" >
+                    <p><img src="thongqtpic.jpg" class=" w3-display-topmiddle w3-circle" alt="me" style="height:180px; display:inline"></p>
+                </div>
+                
+                <div class="w3-col l3 ">
+                    <p><b>Name:</b></p>    
+                        <p>Th&ocircng Tr&#7847;n in Vietnamese</p>
+                    <p><b>Base:</b></p>
+                        <p>Big Rapids, Michigan, USA, Earth.</p>
+                    <p><b>Age:</b></p>
+                    <p>21 years</p>
+                </div>
+                
+            </div>
+        </div>
+
+        
+        
+       <!---BACKGROUND PARALLAX 2: EXPERIENCES -->
+        
+        <div class="backgr2">
+          <div class="caption2">
+            <span  style="background-color:transparent;font-size:25px;color: #f7f7f7;">Experiences</span>
+          </div>
+        </div>
+
+        <div >
+            <div style="color:#ddd;background-color:black;text-align:center;padding:50px 80px;text-align: justify;">
+                
+                <div class="w3-row">
+                
+                    <div class="w3-col l4">
+                        <p><strong>Ferris State University</strong></p>
+                        <p>Jan 2016 - present</p>
+                    </div>
+                    
+                    
+                    <div class="w3-col l8">
+                        <p><strong>Social Media Assistant</strong></p>
+                        <p>Scroll up and down to really get the feeling of how Parallax Scrolling works.
+                        Scroll up and down to really get the feeling of how Parallax Scrolling works.
+                        Scroll up and down to really get the feeling of how Parallax Scrolling works.</p>
+                    </div>
+                    
+                </div>
+                
+                
+            </div>
+        </div>
+    
+        
+        
+        <!---BACKGROUND PARALLAX 3: SKILLS -->
+        
+        <div class="backgr3">
+          <div class="caption">
+            <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">Skills</span>
+          </div>
+        </div>
+
+        <div style="position:relative;">
+            <div style="color:#111;background-color:grey;text-align:center;padding:50px 80px;text-align: justify;">
+            
+                
+                <!-- Row 1 of skills   -->
+                <div class="w3-row">
+                <div class="w3-col l5"> 
+                    <table class="w3-table w3-striped w3-hoverable">
+                        <tr class="w3-green">
+                              <th>Skills</th>
+                              <th>Proficiency</th>
+
+                        </tr>
+                        <tr>
+                               <td>HTML</td>
+                              <td><i class="material-icons">star</i>
+                                  <i class="material-icons">star</i>
+                                  <i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i>
+
+                        </td>
+
+                        </tr>
+                        <tr>
+                              <td>CSS 3</td>
+                              <td><i class="material-icons">star</i>
+                        <i class="material-icons">star</i>
+                        <i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i>
+                        </td>
+
+                        </tr>
+
+                        <tr>
+                              <td>SEO</td>
+                              <td><i class="material-icons">star</i>
+                        <i class="material-icons">star</i>
+                        <i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i>
+                        </td>
+                        </tr>
+
+                        <tr>
+                              <td>Google Adwords</td>
+                              <td><i class="material-icons">star</i>
+                        <i class="material-icons">star</i>
+                        <i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i>
+                        </td>
+                        </tr>
+
+                        <tr>
+                              <td>Email Marketing</td>
+                              <td><i class="material-icons">star</i>
+                        <i class="material-icons">star</i>
+                        <i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i>
+                        </td>
+
+                        </tr>
+
+
+                        <tr>
+                              <td>Post Planner</td>
+                              <td><i class="material-icons">star</i>
+                        <i class="material-icons">star</i>
+                        <i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i>
+                        </td>
+
+                        </tr>
+
+                    </table>
+                    
+                </div>   
+                
+                <div class="w3-col l2">
+                
+                <p></p>    
+                </div>
+                    
+                <div class="w3-col l5"> 
+                    <table class="w3-table w3-striped w3-hoverable">
+                        <tr class="w3-green">
+                              <th>Skills</th>
+                              <th>Proficiency</th>
+
+                        </tr>
+                        <tr>
+                               <td>HTML</td>
+                              <td><i class="material-icons">star</i>
+                                  <i class="material-icons">star</i>
+                                  <i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i>
+
+                        </td>
+
+                        </tr>
+                        <tr>
+                              <td>CSS 3</td>
+                              <td><i class="material-icons">star</i>
+                        <i class="material-icons">star</i>
+                        <i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i>
+                        </td>
+
+                        </tr>
+
+                        <tr>
+                              <td>SEO</td>
+                              <td><i class="material-icons">star</i>
+                        <i class="material-icons">star</i>
+                        <i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i>
+                        </td>
+                        </tr>
+
+                        <tr>
+                              <td>Google Adwords</td>
+                              <td><i class="material-icons">star</i>
+                        <i class="material-icons">star</i>
+                        <i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i>
+                        </td>
+                        </tr>
+
+                        <tr>
+                              <td>Email Marketing</td>
+                              <td><i class="material-icons">star</i>
+                        <i class="material-icons">star</i>
+                        <i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i>
+                        </td>
+
+                        </tr>
+
+
+                        <tr>
+                              <td>Post Planner</td>
+                              <td><i class="material-icons">star</i>
+                        <i class="material-icons">star</i>
+                        <i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i>
+                        </td>
+
+                        </tr>
+
+                    </table>
+                    
+                </div>    
+  
+            </div>
+                
+            <!-- End of Row 1 of the two table skills--->
+                
+             <hr/>   
+            
+            </div>
+          </div>
+            
+       
+
+        
+        <!---BACKGROUND PARALLAX 4 -->
+        
+        <div class="backgr2">
+          <div class="caption">
+            <span class="border">COOL!</span>
+          </div>
+        </div>
+
+        
+        
+        
+        
+        <!--SCRIPTS GO HERE -->
+        
+        <script>
+            $(document).ready(function(){
+              // Add smooth scrolling to all links
+              $("a").on('click', function(event) {
+
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                  // Prevent default anchor click behavior
+                  event.preventDefault();
+
+                  // Store hash
+                  var hash = this.hash;
+
+                  // Using jQuery's animate() method to add smooth page scroll
+                  // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                  $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                  }, 700, function(){
+
+                    // Add hash (#) to URL when done scrolling (default click behavior)
+                    window.location.hash = hash;
+                  });
+                } // End if
+              });
+            });
+            </script>
+        
+        
+        
+        
+        
+    </body>
+
+</html>

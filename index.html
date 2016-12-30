@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        
+        <title> Thong Tran</title>
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!--  CSS Responsive Stylesheet   -->
+        
+        <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+
+        
+        <!-- Smooth SCROLLING JQUERY -->
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        
+        
+        <!-- GOOGLE ICON  -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+        
+        <!-- icon for the menu-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <!-- Google font for my name -->
+        <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
+        <style>
+            
+            
+            body, html {
+              height: 100%;
+              margin: 0;
+              font: 400 15px/1.8 "Lato", sans-serif;
+              color: #777;
+            }
+
+            .backgr1, .backgr2, .backgr3, .backgr4, .backgr5, .backgr6 {
+              position: relative;
+              opacity: 0.4;
+              background-attachment: fixed;
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: cover;
+
+            }
+            
+            .backgr1 {
+              background-image: url("background3.jpg");
+              min-height: 0100%;
+            }
+
+            .backgr2 {
+              background-image: url("background5.png");
+              min-height: 400px;
+            }
+
+            .backgr3 {
+              background-image: url("background1.jpg");
+              min-height: 400px;
+            }
+
+            .backgr4{
+                background-image: url("lightbulbs.jpg");
+                min-height:400px;
+            }           
+            
+            .backgr5 {
+                
+                background-image: url("workimg.jpg");
+                min-height:400px;
+            }
+            
+            .backgr6 {
+                background-image: url("silvertools.jpg");
+                min-height:400px;
+            }
+            
+            .caption {
+              position: absolute;
+              left: 0;
+              top: 50%;
+              width: 100%;
+              text-align: center;
+              color: #000;
+            }
+            
+            
+            
+            .caption2 {
+              position: absolute;
+              left: 25%;
+              top: 30%;
+              width: 50%;
+              text-align: center;
+              color: #000;
+                background-color: #111;
+              color: #fff;
+              padding: 18px;
+              font-size: 25px;
+              letter-spacing: 10px;
+            }
+            
+            .caption span.border {
+              background-color: #fff;
+              color: #111;
+              padding: 18px;
+              font-size: 25px;
+              letter-spacing: 10px;
+            }
+
+            h3 {
+              letter-spacing: 5px;
+              text-transform: uppercase;
+              font: 20px "Lato", sans-serif;
+              color: #111;
+            }
+            
+            
+            /*  CSS for thepictures of the WORK sections  */
+            
+            #workimg {
+                display: block; 
+                margin-left: auto;
+                margin-right: auto;
+            } /* Doesn't work for what I want */
+            
+            
+            #centerwork {
+                min-height: 10em;
+                display: table-cell;
+                vertical-align: middle 
+            } /* Doesn't work for what I want  */
+            
+            #workpic {
+                padding: 40px;
+            }
+            
+            
+            /*  DEFINDING MODAL TEXT COLOR    */
+            .w3-modal-content{
+                
+                color:#000000;
+            }
+            
+            
+            /*  CENTER block Content inside the modal*/
+            
+            
+            .center {
+                margin: auto;
+                width: 50%;
+                
+                padding: 10px;
+            }
+            
+            
+            
+        </style>
+        
+    </head>
+        
+    <!---- ------------------------------------------- ---->
+        
+    <body>
+        <div id="top"></div>
+        
+        <!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <ul class="w3-navbar" id="myNavbar">
+    <li class="w3-hide-medium w3-hide-large w3-opennav w3-right">
+      <a class="w3-hover-black" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+        <i class="fa fa-bars"></i>
+      </a>
+    </li>
+    
+    <li class="w3-hide-small"><a href="#about"><i class="fa fa-user"></i> About</a></li>
+    <li class="w3-hide-small"><a href="#skills"><i class="fa fa-paint-brush"></i> Skill</a></li>
+    <li class="w3-hide-small"><a href="#education"><i class="fa fa-graduation-cap"></i> Education</a></li>
+  <li class="w3-hide-small"><a href="#experiences"><i class="fa fa-line-chart"></i> Experiences</a></li>
+    <li class="w3-hide-small"><a href="#works"><i class="fa fa-suitcase"></i> Works</a></li>
+      <li class="w3-hide-small"><a href="#contact"><i class="fa fa-phone"></i> Contact</a></li>
+
+    <li class="w3-hide-small w3-right">
+      <a href="#top" class="w3-hover-blue" style="font-family: 'Bree Serif', serif;font-size:16px;">
+        THONG TRAN
+      </a>
+    </li>
+  </ul>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-hide w3-hide-large w3-hide-medium">
+    <ul class="w3-navbar w3-left-align w3-white">
+      <li><a href="#about" onclick="toggleFunction()">About</a></li>
+      <li><a href="#skills" onclick="toggleFunction()">Skills</a></li>
+      <li><a href="#education" onclick="toggleFunction()">Education</a></li>
+        <li><a href="#experiences" onclick="toggleFunction()">Experiences</a></li>
+        <li><a href="#works" onclick="toggleFunction()">Works</a></li>
+        <li><a href="#contact" onclick="toggleFunction()">Contact</a></li>
+      
+    </ul>
+  </div>
+</div>
+        
+      <!--  <div class="caption">
+            <span class="border">Hi, I am Thong</span> 
+            <br>
+            <span class="border"> I do digital marketing</span>
+          </div>
+        -->
+        
+         <!---BACKGROUND PARALLAX 1 -->
+        
+        <div class="caption2">
+            Hi, I am Thong <br> I am a digital marketer
+            
+        </div>
+        
+        <div class="backgr1">
+          
+        </div>
+
+        <div style="color:#FFFFFF;background-color:black;text-align:center;padding:50px 80px;text-align: justify;" id="about">
+          
+              <div class="w3-center w3-padding-16"><h1>About me</h1></div>
+            
+            <div class="w3-row w3-container w3-padding-8">
+                
+                <div class="w3-col l5">
+                    <p>Hi, I am an online marketer. I also do front-end web developing as I am very interested in coding and web technology. In addition to the skills on the web, I have done a great numbers of event planning and event marketing in my four years of college. But in my downtime I am on the Internet constantly learning and creating.</p>
+                </div>
+                
+                <div class="w3-col l4 w3-display-container" style="height:190px;" >
+                    <p><img src="thongqtpic.jpg" class=" w3-display-topmiddle w3-circle" alt="me" style="height:180px; display:inline"></p>
+                </div>
+                
+                <div class="w3-col l3 ">
+                    <p><b>Name:</b></p>    
+                        <p>Th&ocircng Tr&#7847;n in Vietnamese</p>
+                    <p><b>Base:</b></p>
+                        <p>Big Rapids, Michigan, USA, Earth.</p>
+                    <p><b>Age:</b></p>
+                    <p>21 years</p>
+                </div>
+                
+            </div>
+        </div>
+
+        
+        
+        <!---BACKGROUND PARALLAX 2: SKILLS -->
+        
+        <div class="backgr6" id="skills">
+          <div class="caption">
+            <span class="border">Skills</span>
+          </div>
+        </div>
+
+        <div style="position:relative;">
+            <div style="color:#111;background-color:#999999;text-align:center;padding:50px 80px;text-align: justify;">
+            
+                
+                <!-- Row 1 of skills   -->
+                <div class="w3-row">
+                    <hr>
+                    <h2> Web and Graphic</h2>
+                <div class="w3-col l5"> 
+                    <table class="w3-table w3-striped w3-hoverable">
+                        <tr class="w3-black">
+                              <th>Web development</th>
+                              <th></th>
+
+                        </tr>
+                        <tr>
+                               <td>HTML</td>
+                              <td><i class="material-icons">star</i>
+                                  <i class="material-icons">star</i>
+                                  <i class="material-icons">star</i><i class="material-icons">star</i>
+
+                        </td>
+
+                        </tr>
+                        <tr>
+                              <td>CSS 3</td>
+                              <td><i class="material-icons">star</i>
+                        <i class="material-icons">star</i>
+                        <i class="material-icons">star</i>
+                        </td>
+
+                        </tr>
+
+                        <tr>
+                              <td>Bootstrap</td>
+                              <td><i class="material-icons">star</i>
+                        <i class="material-icons">star</i>
+                        <i class="material-icons">star</i>
+                        </td>
+                        </tr>
+
+                        <tr>
+                              <td>Javascript</td>
+                              <td><i class="material-icons">star</i>
+                        <i class="material-icons">star</i>
+                       
+                        </td>
+                        </tr>
+
+                        <tr>
+                              <td>JQuery</td>
+                              <td><i class="material-icons">star</i>
+                        <i class="material-icons">star</i>
+                        </td>
+
+                        </tr>
+
+
+                    </table>
+                    
+                </div>   
+                
+                <div class="w3-col l2">
+                
+                <p></p>
+                    
+                    
+                </div>
+                    
+                <div class="w3-col l5"> 
+                    
+                    <table class="w3-table w3-striped w3-hoverable">
+                        <tr class="w3-black">
+                              <th>Graphic Design</th>
+                              <th></th>
+
+                        </tr>
+                        <tr>
+                               <td>Pixlr Editor</td>
+                              <td><i class="material-icons">star</i>
+                                  <i class="material-icons">star</i>
+                                  <i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i>
+
+                        </td>
+
+                        </tr>
+                        <tr>
+                              <td>Photoshop</td>
+                              <td><i class="material-icons">star</i>
+                        <i class="material-icons">star</i>
+                        <i class="material-icons">star</i>
+                        </td>
+
+                        </tr>
+
+                        <tr>
+                              <td>Illustrator</td>
+                              <td><i class="material-icons">star</i>
+                        <i class="material-icons">star</i>
+                        </td>
+                        </tr>
+
+                        <tr>
+                    
+                    </table>
+                    
+                </div>    
+  
+            </div>
+                
+            <!-- End of Row 1 of the two table skills--->
+                
+             <hr/> 
+                
+            <!-- Row 2 of skills   -->
+                <div class="w3-row">
+                    <h2> Digital Marketing</h2>
+                <div class="w3-col l5"> 
+                    <table class="w3-table w3-striped w3-hoverable">
+                        <tr class="w3-black">
+                              <th>Web Marketing</th>
+                              <th></th>
+
+                        </tr>
+                        <tr>
+                               <td>Email Marketing</td>
+                              <td><i class="material-icons">star</i>
+                                  <i class="material-icons">star</i>
+                                  <i class="material-icons">star</i><i class="material-icons">star</i>
+
+                        </td>
+
+                        </tr>
+                        <tr>
+                              <td>Google Adwords</td>
+                              <td><i class="material-icons">star</i>
+                        <i class="material-icons">star</i>
+                        <i class="material-icons">star</i>
+                        </td>
+
+                        </tr>
+
+                        <tr>
+                              <td>Facebook Ads</td>
+                              <td><i class="material-icons">star</i>
+                        <i class="material-icons">star</i>
+                        <i class="material-icons">star</i>
+                        </td>
+                        </tr>
+                        
+                        
+                        <tr>
+                              <td>Google Analytic</td>
+                              <td><i class="material-icons">star</i>
+                        <i class="material-icons">star</i>
+                        </td>
+                        </tr>
+                        
+                        <tr>
+                              <td>SEO</td>
+                              <td><i class="material-icons">star</i>
+                        <i class="material-icons">star</i>
+                        </td>
+                        </tr>
+
+
+                    </table>
+                    
+                </div>   
+                
+                <div class="w3-col l2">
+                
+                <p></p>
+                    
+                    
+                </div>
+                    
+                <div class="w3-col l5"> 
+                    
+                    <table class="w3-table w3-striped w3-hoverable">
+                        <tr class="w3-black">
+                              <th>Social Media Marketing</th>
+                              <th></th>
+
+                        </tr>
+                        <tr>
+                               <td>Klout</td>
+                              <td><i class="material-icons">star</i>
+                                  <i class="material-icons">star</i>
+                                  <i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i>
+
+                        </td>
+
+                        </tr>
+                        <tr>
+                              <td>Post Planner</td>
+                              <td><i class="material-icons">star</i>
+                        <i class="material-icons">star</i>
+                        <i class="material-icons">star</i><i class="material-icons">star</i>
+                        </td>
+
+                        </tr>
+
+                        <tr>
+                              <td>Later</td>
+                              <td><i class="material-icons">star</i>
+                        <i class="material-icons">star</i>
+                        <i class="material-icons">star</i><i class="material-icons">star</i>
+                        </td>
+                        </tr>
+
+                        <tr>
+                    
+                    </table>
+                    
+                </div>    
+  
+            </div> <!-- End of second (2nd) row of skill -->
+                
+                
+    
+                
+            </div> <!--   End of the gray area   -->
+          </div> <!-- End of the div after the parallax div-->
+        
+        
+        
+           <!---BACKGROUND PARALLAX 3 -->
+        
+        <div class="backgr4" id="education">
+          <div class="caption">
+            <span class="border">Education</span>
+          </div>
+        </div>
+        
+        <div >
+            <div style="color:#ddd;background-color:black;text-align:center;padding:50px 80px;text-align: justify;">
+                
+                <div class="w3-row">
+                
+                    <div class="w3-col l4">
+                        <p><b>Ferris State University</b></p>
+                        <p>September 2012 - December 2016</p>
+                    </div>
+                    
+                    
+                    <div class="w3-col l8">
+                        <p><strong>Bachelor of Business Administration (Specialization: E-Commerce)</strong></p>
+                        <p>Education was primiary in direct marketing, business-to-business marketing, business-to-consumer marketing, advertising and integrated marketing communication (AIMC), marketing reserach. I learned a lot about important principles and concepts (Customer Lifetime Value, offer incentive, segmentation strategy,...) underlying the tools such as Google Adwords, Google Analytics, SPSS Statistic Analysis,....
+                        <br> <a href="http://www.ferris.edu">Ferris State University</a></p>
+                    </div>
+                    
+                </div>
+                
+                
+                <div class="w3-row">
+                
+                    <div class="w3-col l4">
+                        <p><b> Neil Patel</b></p>
+                        <p>August 2016 - Present</p>
+                    </div>
+                    
+                    
+                    <div class="w3-col l8">
+                        <p><strong>Course: Advanced Marketing Program</strong></p>
+                        <p>The course is a comprehensive marketing with focus on key tactics and strategies to achieve repeated and high volume sales through online marketing strategies. The program is developed by a multi-millionaire entreprenuer, Neil Patel.
+                            <br> <a href="http://neilpatel.com/advanced-marketing-program" alt="neip patel marketing program"> Neil Patel Advanced Marketing Program </a></p>
+                    </div>
+                    
+                </div>
+                
+                
+                <div class="w3-row">
+                
+                    <div class="w3-col l4">
+                        <p><b>Lynda</b></p>
+                        <p>October 2016 - Present</p>
+                    </div>
+                    
+                    
+                    <div class="w3-col l8">
+                        <p><strong>Course: SEO for Local Visibility </strong></p>
+                        <p>This course is a tremendous resources for optimizing online presence of businesses to get more customers. With Brad Batesoles as an SEO expert, I learn SEO strategies to maximize visibility on search engines, optimize site structure, appear on Google Maps and local results, and boost ranking on search results. 
+                        <br> <a href="https://www.lynda.com/Google-Maps-tutorials/Local-SEO/494107-2.html" alt="Lynda course SEO"> Brad Batesole Local SEO Course</a></p>
+                    </div>
+                    
+                </div>
+                
+                
+            </div>
+        </div>
+        
+        
+        
+       <!---BACKGROUND PARALLAX 4: EXPERIENCES -->
+        
+        <div class="backgr2" id="experiences">
+          <div class="caption2">
+            <span  style="background-color:transparent;font-size:25px;color: #f7f7f7;">Experiences</span>
+          </div>
+        </div>
+
+        <div >
+            <div style="color:#ddd;background-color:black;text-align:center;padding:50px 80px;text-align: justify;">
+                
+                
+                <div class="w3-row">
+                
+                    <div class="w3-col l4">
+                        <p><strong>Office of International Education</strong></p>
+                        <p>May 2016 - December 2016</p>
+                    </div>
+                    
+                    
+                    <div class="w3-col l8">
+                        <p><strong>Social Media Assistant</strong></p>
+                        <p> Office of International Education is a part of Ferris State University. I worked on getting awareness of international students around the world to the services and education of the University. As an Admin of 'Ferris International Student' Facebook group, I spent a lot of my time on social media networks creating content, planning contents, and following up using social media tools: Facebook Ads, Klout, and Later.
+                        <br> <a href="https://www.facebook.com/fsuinternational/"> Facebook Page of Office of International Education</a>
+                        <br> <a href="https://www.instagram.com/officialferrisinternational/"> Instagram of Office of International Education</a>
+                        <br> <a href="https://www.facebook.com/groups/509864089170377/?ref=bookmarks">Facebook Group of International Student </a>
+                        </p>
+                    </div>
+                    
+                </div>
+                
+                <div class="w3-row">
+                
+                    <div class="w3-col l4">
+                        <p><strong>Office of International Education</strong></p>
+                        <p>Jan 2016 - May 2016</p>
+                    </div>
+                    
+                    
+                    <div class="w3-col l8">
+                        <p><strong>Event Coordinator</strong></p>
+                        <p>One function of Ferris State University beside enrolling qualifed students is to create an environment where student can be involved and learn softskills for professional development. As an event coordinator, I plan event cooperations, prepare budget, coordinate event marketing, and other functions. Average attendants were from 60 to 300.
+                        <br> <a href="https://www.facebook.com/pg/fsuinternational/events"> Ferris Interational Events</a>
+                        </p>
+                    </div>
+                    
+                </div>
+                
+                <div class="w3-row">
+                
+                    <div class="w3-col l4">
+                        <p><strong>International Student Organization</strong></p>
+                        <p>May 2015 - December 2016</p>
+                    </div>
+                    
+                    
+                    <div class="w3-col l8">
+                        <p><strong>President</strong></p>
+                        <p>As a leader of a student organization, I direct team work and coordinating events on campus. In planning and running an event/ program, the work involved required skills such as facilitate group meeting, budgeting and financing, event promotion/marketing, recruting and training volunteers.<br><a href="http://www.facebook.com/fsuiso">ISO Ferris</a></p>
+                    </div>
+                    
+                </div>
+                
+                
+                <div class="w3-row">
+                
+                    <div class="w3-col l4">
+                        <p><strong>International Student Organization</strong></p>
+                        <p>December 2014 - April 2015</p>
+                    </div>
+                    
+                    
+                    <div class="w3-col l8">
+                        <p><strong>Social Media Coordinator</strong></p>
+                        <p> Before becoming President of International Student Organization, I was passionate about the organization and I want to promote it as much as I can. Thus I work on creating a schedule of weekly content and experimenting with different content type and posts to increase engagements and visibility of the organization Facebook Page: ISO Ferris.
+                        <br><a href="http://www.facebook.com/fsuiso">ISO Ferris</a></p>
+                    </div>
+                    
+                </div>
+                
+                
+            </div>
+        </div>
+    
+        
+        
+        
+            
+       
+
+        
+        <!---BACKGROUND PARALLAX 5 -->
+        
+        <div class="backgr5" id="works">
+          <div class="caption">
+            <span class="border">WORKS</span>
+          </div>
+        </div>
+
+        <div >
+            <div style="color:#ddd;background-color:black;text-align:center;padding:50px 80px;text-align: justify;" >
+                
+                <div class="w3-row"  >
+                
+                        <!--   WORK: ISO    -->
+                         <div class="w3-col l4" id="workpic" onclick="document.getElementById('modal01').style.display='block'"  style="cursor:default">
+                             <div class="w3-card-4 w3-hover-white" style="width:100%">
+                                <img class="w3-hover-opacity" src="iso.jpg" alt="Person" style="width:100%">
+                                <div class="w3-container">
+                                    <h4><b>International Student Organization</b></h4>
+                                  
+                                </div>
+                            </div>
+                        </div>
+                  
+                     
+              <!--  onclick="window.location.href='http://www.google.com';" THIS will make the object to a new page using onclick to new url-->
+                    
+                   
+                    <!--   WORK: OIE    -->
+                         <div class="w3-col l4" id="workpic" onclick="document.getElementById('modal02').style.display='block'"  style="cursor:default">
+                             <div class="w3-card-4 w3-hover-white" style="width:100%">
+                                <img class="w3-hover-opacity" src="oie.png" alt="Person" style="width:100%">
+                                <div class="w3-container">
+                                  <h4><b>Office of Internaitonal Education</b></h4>
+                                  
+                                </div>
+                            </div>
+                        </div>
+                  
+                     
+              <!--  onclick="window.location.href='http://www.google.com';" THIS will make the object to a new page using onclick to new url-->
+                    
+                    
+                    
+                        <!--   WORK: QCV    -->
+                         <div class="w3-col l4" id="workpic" onclick="document.getElementById('modal03').style.display='block'"  style="cursor:default">
+                             <div class="w3-card-4 w3-hover-white" style="width:100%">
+                                <img class="w3-hover-opacity" src="qcv.png" alt="Person" style="width:100%">
+                                <div class="w3-container">
+                                  <h4><b>Quoc Cuong Viet Electric Co., Ltd</b></h4>
+                                  
+                                </div>
+                            </div>
+                        </div>
+                  
+                     
+              <!--  onclick="window.location.href='http://www.google.com';" THIS will make the object to a new page using onclick to new url-->
+                    
+                    
+                    
+                    </div> <!-- end of w3-row div -->
+                
+                </div> <!--- End the black content --->
+                
+   
+            </div> <!-- End the overall div after the parallax picture 5-->
+        
+        
+        
+        <!-- CONTACT SECTION  -->
+        
+        
+            <div style="color:#ffffff;background-color:#999999;text-align:center;padding:50px 80px;text-align: justify;" id="contact">
+          
+                <div class="w3-center w3-padding-16"><h1>Contact me</h1></div>
+
+                <div class="w3-row w3-container w3-padding-8">
+                    <div >
+                        
+                    <div class="cognito" style="margin-left:19%;">
+                        <script src="https://services.cognitoforms.com/s/bHphZS-cw0ms4W5AEoKteg"></script>
+                        <script>Cognito.load("forms", { id: "1" });</script>
+                    </div>
+                        
+                        
+                    </div>
+                    
+                </div>
+                
+                
+                <div class="w3-xxxlarge w3-padding w3-center">
+				<a href="https://www.facebook.com/thongqt2" target="_blank" class=" w3-hover-text-indigo w3-show-inline-block"><i class="fa fa-facebook-official"></i></a>
+				<a href="https://www.twitter.com/thongqt" target="_blank" class="w3-hover-text-light-blue w3-show-inline-block"><i class="fa fa-twitter"></i></a>
+				<a href="https://www.linkedin.com/in/thongqt" target="_blank" class="w3-hover-text-indigo w3-show-inline-block"><i class="fa fa-linkedin"></i></a>
+				</div>
+
+                
+            </div>
+        
+        
+        <!--
+        References:
+            ICONS
+            http://www.w3schools.com/css/css_icons.asp
+        Smooth scrolling
+http://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_eff_animate_smoothscroll
+Google font for my name
+        https://fonts.google.com/specimen/Bree+Serif?selection.family=Bree+Serif
+        
+        RECAP OF PROJECT "redesign thongqt website"
+        Around 30 hours (based on Toggl hours) in the spand of 14 days (I didn't work on the site everyday)
+        From around November 09 to December 27: From researching about the ideas to uploading the file to the websever online.
+        -->
+        
+        
+        <!--SCRIPTS GO HERE -->
+        
+        <script>
+            
+            //smooth scrolling function 
+            
+            $(document).ready(function(){
+              // Add smooth scrolling to all links
+              $("a").on('click', function(event) {
+
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                  // Prevent default anchor click behavior
+                  event.preventDefault();
+
+                  // Store hash
+                  var hash = this.hash;
+
+                  // Using jQuery's animate() method to add smooth page scroll
+                  // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                  $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                  }, 1700, function(){
+
+                    // Add hash (#) to URL when done scrolling (default click behavior)
+                    window.location.hash = hash;
+                  });
+                } // End if
+              });
+            });
+            
+            
+            // Change style of navbar on scroll
+                window.onscroll = function() {myFunction()};
+                function myFunction() {
+                    var navbar = document.getElementById("myNavbar");
+                    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                        navbar.className = "w3-navbar" + " w3-card-2" + " w3-animate-top" + " w3-white";
+                    } else {
+                        navbar.className = navbar.className.replace(" w3-card-2 w3-animate-top w3-white", "");
+                    }
+                }
+            
+            // Used to toggle the menu on small screens when clicking on the menu button
+                function toggleFunction() {
+                    var x = document.getElementById("navDemo");
+                    if (x.className.indexOf("w3-show") == -1) {
+                        x.className += " w3-show";
+                    } else {
+                        x.className = x.className.replace(" w3-show", "");
+                    }
+                }
+            
+          
+    
+            
+            
+            
+            </script>
+        
+        
+        
+        
+        
+    </body>
+
+</html>
