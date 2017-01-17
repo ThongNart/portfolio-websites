@@ -1,0 +1,89 @@
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+
+html, body {
+	margin-left:-8px;
+}
+
+.w3-row-padding img {margin-bottom: 12px}
+
+/* Set the width of the sidenav to 120px */
+.w3-sidenav {width: 160px;background: black;}
+
+/* Add a left margin to the "page content" that matches the width of the sidenav (120px) */
+#main {margin-left: 160px}
+
+
+/* Remove margins from "page content" on small screens */
+/*@media only screen and (max-width: 600px) {#main {margin-left: 0}}*/
+        
+@media (max-width: 600px) {
+       #main {margin-left:0px;}
+}
+
+
+/* CSS for Samir-nav in desktop view*/
+
+
+/*#samir-nav ul {
+	margin: 0; 
+	padding: 0;
+}
+
+#samir-nav li {
+	display:block;
+	float:left;
+	padding: 10px;
+	position:relative;
+}
+
+#samir-nav li a {
+	display:block;
+	height:30px;
+	line-height:30px;
+	padding: 0 15px;
+	font-size:18px;
+}
+
+#samir-nav .current-menu-item a, #samir-nav .current_page_item a, #samir-nav a:hover {
+	color:white;
+	background:blue;
+}*/
+
+#samir-nav {
+	background:transparent;	
+}
+
+#samir-nav ul, #samir-nav li{
+	display:inline;
+}
+
+
+#samir-nav a {
+	padding: 0 10px 0 10px;
+	line-height:80px;
+	font-size:18px;
+}
+#samir-nav .current-menu-item a, #samir-nav .current_page_item a, #samir-nav a:hover {
+	color:white;
+	background:#0066cc;
+}
+
+
+
+
+/* CSS for myNavbar in mobile view*/
+
+
+#myNavbar {
+	height:auto;
+}
+
+
+
+
+
+
+
+
+
+

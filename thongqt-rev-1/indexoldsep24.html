@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Thong QT</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+		
+			<style>
+				body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+			</style>
+	</head>
+	
+	<body class="w3-light-grey">
+  
+		<!-- Header -->
+		<div class="w3-container w3-center w3-padding-12 w3-black">
+			<h1><b>Thong QT</b></h1>
+			<p>Welcome to the blog of Thong QT: Home</p>
+		</div>
+	  
+		<!-- Top Navgiation Menu -->
+		<ul class="w3-navbar w3-large w3-dark-grey w3-left-align">
+		  <li class="w3-hide-medium w3-hide-large w3-black w3-opennav w3-right">
+			<a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
+		  </li>
+		  <li><a href="index.html" class="w3-light-grey">Home</a></li>
+		  <li class="w3-hide-small"><a href="about.html">About</a></li>
+		  <li class="w3-hide-small"><a href="blog.html">Blog</a></li>
+		  <li class="w3-hide-small"><a href="contact.html">Contact</a></li>
+		</ul>
+
+		<div id="demo" class="w3-hide w3-hide-large w3-hide-medium">
+		  <ul class="w3-navbar w3-left-align w3-large w3-black">
+			<li><a href="about.html">About</a></li>
+			<li><a href="blog.html">Blog</a></li>
+			<li><a href="contact.html">Contact</a></li>
+		  </ul>
+		</div>
+	 
+		<!-- Body-->
+		
+		<!-- About card on medium and small screens -->
+		<div class="w3-hide-large w3-margin w3-container w3-white w3-padding-large">
+			<div class="w3-row-padding">
+				<div class="w3-quarter w3-container w3-margin-top w3-margin-bottom w3-padding-large">
+					<img src="https://pbs.twimg.com/profile_images/722948592965652481/GVj-f01n_400x400.jpg" alt="Me" style="width:100px">
+				</div>
+				<div class="w3-threequarter w3-container w3-padding-large">
+					<h4><b>Thong Tran</b></h4>
+					<p>I am passonate about driving customers and visitors to business either through </p>
+				</div>
+			</div>
+		</div> 	
+		
+		<!-- GRID Begins-->
+
+		<div class="w3-row">
+		
+		<!-- About Card on big screens -->
+		<div class="w3-col l3 w3-padding-large">
+		  <div class="w3-card-4 w3-margin w3-margin-top w3-hide-medium w3-hide-small">
+		  <img src="https://pbs.twimg.com/profile_images/722948592965652481/GVj-f01n_400x400.jpg" style="width:100%">
+			<div class="w3-container w3-white">
+			  <h4><b>My Name</b></h4>
+			  <p>Just me, myself and I, exploring the universe of uknownment. I have a heart of love and a interest of lorem ipsum and mauris neque quam blog. I want to share my world with you.</p>
+			</div>
+		  </div>
+		</div>
+		
+		
+		<!-- Blog entry -->
+		<div class="w3-col l9 w3-padding-large">
+		  <div class="w3-card-4 w3-margin w3-white">
+		  <img src="https://lh3.googleusercontent.com/8B11WdPw0olnl2kcYapGOsy3YwSoDAume8y945Ge9hLL2pGERpntSxk8ErrWeTjMXkDUz6K1=s630-fcrop64=1,00000a55ffbbe42b" alt="Nature" style="width:100%">
+			<div class="w3-container w3-padding-8">
+			  <h3><b>TITLE HEADING</b></h3>
+			  <h5>Title description, <span class="w3-opacity">April 7, 2014</span></h5>
+			</div>
+
+			<div class="w3-container">
+			  <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed
+				tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+			  <div class="w3-row">
+				<div class="w3-col m8 s12">
+				  <p><button class="w3-btn w3-padding-large w3-white w3-border w3-hover-border-black"><b>READ MORE &raquo;</b></button></p>
+				</div>
+				<div class="w3-col m4 w3-hide-small">
+				  <p><span class="w3-padding-large w3-right"><b>Comments</b> <span class="w3-tag">0</span></span></p>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		 </div>
+		
+		
+		<!-- GRID ends-->
+		</div>
+		
+		
+		<!-- Footer -->
+		<footer class="w3-container w3-dark-grey w3-padding-32">
+	   
+			<ul class="w3-pagination w3-border">
+			  <li><a href="#">&laquo;</a></li>
+			  <li><a class="w3-green" href="#">1</a></li>
+			  <li><a href="#">2</a></li>
+			  <li><a href="#">3</a></li>
+			  <li><a href="#">4</a></li>
+			  <li><a href="#">5</a></li>
+			  <li><a href="#">&raquo;</a></li>
+			</ul>
+
+			<p>&copy; Copyright 2016 - by Thong Tran</p>
+			
+		</footer>
+
+		<script>
+		function myFunction() {
+			var x = document.getElementById("demo");
+			if (x.className.indexOf("w3-show") == -1) {
+				x.className += " w3-show";
+			} else {
+				x.className = x.className.replace(" w3-show", "");
+			}
+		}
+		</script>
+		
+	</body>
+	
+</html>
+
+

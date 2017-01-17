@@ -1,0 +1,5 @@
+[14-Jan-2017 17:27:06 America/Chicago] PHP Fatal error:  Call to undefined function get_header() in /home2/samirdave/public_html/wp-content/themes/samir-site/index.php on line 1
+[14-Jan-2017 17:27:10 America/Chicago] PHP Fatal error:  Call to undefined function get_header() in /home2/samirdave/public_html/wp-content/themes/samir-site/index.php on line 1
+[14-Jan-2017 17:27:13 America/Chicago] PHP Fatal error:  Call to undefined function get_header() in /home2/samirdave/public_html/wp-content/themes/samir-site/index.php on line 1
+[14-Jan-2017 17:27:15 America/Chicago] PHP Fatal error:  Call to undefined function get_header() in /home2/samirdave/public_html/wp-content/themes/samir-site/index.php on line 1
+[14-Jan-2017 17:28:09 America/Chicago] PHP Fatal error:  Call to undefined function get_header() in /home2/samirdave/public_html/wp-content/themes/samir-site/index.php on line 1
