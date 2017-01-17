@@ -1,0 +1,12 @@
+/* TO ADJUST THE PERCENTAGE IN PROGRESS BAR*/
+ #skill1{
+width:60%;
+}
+ #skill2{
+width:70%;
+}
+#skill3{
+width:80%;
+}   
+      
+    
